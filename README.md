@@ -4,7 +4,7 @@ Out
 A logging utility made for use with Monster Debugger
 ----------------------------------------------------
 
-Out is a logging proxy for Monster Debugger. It gives you:
+What you get when you use Out:
 
 * Six levels of logging
 * Enabling and disabling of levels
