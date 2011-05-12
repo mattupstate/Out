@@ -13,4 +13,4 @@ What you get when you use Out:
 * Object level silencing
 * And a few other things!
 
-[Monster Debugger] http://demonsterdebugger.com/
+[Monster Debugger](http://monsterdebugger.com/)
