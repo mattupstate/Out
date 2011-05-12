@@ -1,0 +1,8 @@
+.DS_Store
+.project
+.settings
+bin
+**/bin
+report
+**/report
+user.properties
