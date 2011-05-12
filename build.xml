@@ -52,20 +52,6 @@
         <echo>[clean] Directories removed: bin, report, dist</echo>
     </target>
 
-    <target name="compile-swc" depends="run-tests">
-        <echo>[compile-swc] Compiling SWC</echo>
-        <echo>[compile-swc] Using Flex SDK at: ${FLEX_HOME}</echo>
-        <java jar="${FLEX_HOME}/lib/compc.jar" dir="${FLEX_HOME}/frameworks" fork="true" failonerror="true">
-            <arg value="-output=${bin.dir}/${project.name.versioned}.swc"/>
-            <arg value="-include-sources=${src.dir}" />
-            <arg value="-incremental=true"/>
-            <arg value="-static-link-runtime-shared-libraries=true"/>
-            <arg value="-verbose-stacktraces=true"/>
-            <arg value="-headless-server=true"/>
-        </java>
-        <echo>[compile-swc] Release SWC ${project.name.versioned}.swc created successfully</echo>
-    </target>
-
     <target name="compile-tests" depends="init">
         <echo>[compile-tests] Compiling unit tests</echo>
         <java jar="${FLEX_HOME}/lib/mxmlc.jar" dir="${FLEX_HOME}/frameworks" maxmemory="512m" fork="true" failonerror="true">
