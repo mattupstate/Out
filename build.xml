@@ -4,9 +4,9 @@
     <description>Out</description>
     
     <property file="user.properties" />
-	<property file="build.properties" />
+    <property file="build.properties" />
 	
-	<!-- Add the ant-contrib tasks -->
+    <!-- Add the ant-contrib tasks -->
     <taskdef resource="net/sf/antcontrib/antcontrib.properties" classpath="${resources.dir}/ant/ant-contrib.jar" />
     
     <!-- Set up FlexUnit Ant tasks -->
