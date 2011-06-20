@@ -1,8 +1,6 @@
-Out
-===
+# Out
 
-A logging utility made for use with Monster Debugger
-----------------------------------------------------
+### A logging utility made for use with Monster Debugger
 
 What you get when you use Out:
 

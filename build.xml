@@ -4,9 +4,9 @@
     <description>Out</description>
     
     <property file="user.properties" />
-	<property file="build.properties" />
+    <property file="build.properties" />
 	
-	<!-- Add the ant-contrib tasks -->
+    <!-- Add the ant-contrib tasks -->
     <taskdef resource="net/sf/antcontrib/antcontrib.properties" classpath="${resources.dir}/ant/ant-contrib.jar" />
     
     <!-- Set up FlexUnit Ant tasks -->
@@ -20,9 +20,9 @@
         <echo message="Available targets:"/>
         <echo message=""/>
         <echo message="run-tests         --&gt; Build Out SWC and run unit tests"/>
-        <echo message="compile-swc       --&gt; Build Out Toolkit  SWC"/>
-        <echo message="clean             --&gt; Remove all folders created by build script"/>
-        <echo message="init              --&gt; Create build folders"/>
+        <echo message="compile-swc       --&gt; Build Out SWC"/>
+        <echo message="clean             --&gt; Delete temporary build files"/>
+        <echo message="init              --&gt; Create temporary build files"/>
         <echo message=""/>
     </target>
     
