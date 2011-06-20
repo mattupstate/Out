@@ -1,10 +1,10 @@
 package {
-	
-	import org.flexunit.Assert;
     
-	public class OutTest {
-		
-		[Test]
+    import org.flexunit.Assert;
+    
+    public class OutTest {
+        
+        [Test]
         public function enable_and_disable():void
         {
             Out.enableLevel(Out.ERROR);
@@ -28,8 +28,8 @@ package {
         [Test]
         public function disable_all_levels():void
         {
-        	Out.disableAllLevels();
-        	Assert.assertFalse(Out.isLevelEnabled(Out.FATAL));
+            Out.disableAllLevels();
+            Assert.assertFalse(Out.isLevelEnabled(Out.FATAL));
             Assert.assertFalse(Out.isLevelEnabled(Out.ERROR));
             Assert.assertFalse(Out.isLevelEnabled(Out.WARNING));
             Assert.assertFalse(Out.isLevelEnabled(Out.DEBUG));
@@ -40,22 +40,22 @@ package {
         [Test]
         public function silence_and_unsilence_package():void
         {
-        	var p:String = "com.somewhere";
-        	Out.silencePackage(p);
-        	Assert.assertTrue(Out.isPackageSilenced(p));
-        	Out.unsilencePackage(p);
-        	Assert.assertFalse(Out.isPackageSilenced(p));
+            var p:String = "com.somewhere";
+            Out.silencePackage(p);
+            Assert.assertTrue(Out.isPackageSilenced(p));
+            Out.unsilencePackage(p);
+            Assert.assertFalse(Out.isPackageSilenced(p));
         }
         
         [Test]
         public function silence_and_unsilence_object():void
         {
-        	var o:Object = {};
-        	Out.silence(o);
-        	Assert.assertTrue(Out.isSilenced(o));
-        	Out.unsilence(o);
-        	Assert.assertFalse(Out.isSilenced(o));
+            var o:Object = {};
+            Out.silence(o);
+            Assert.assertTrue(Out.isSilenced(o));
+            Out.unsilence(o);
+            Assert.assertFalse(Out.isSilenced(o));
         }
-		
-	}
+        
+    }
 }
