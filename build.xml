@@ -20,7 +20,6 @@
         <echo message="Available targets:"/>
         <echo message=""/>
         <echo message="run-tests         --&gt; Build Out SWC and run unit tests"/>
-        <echo message="compile-swc       --&gt; Build Out SWC"/>
         <echo message="clean             --&gt; Delete temporary build files"/>
         <echo message="init              --&gt; Create temporary build files"/>
         <echo message=""/>
